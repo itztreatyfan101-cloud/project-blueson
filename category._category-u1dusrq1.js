@@ -1,0 +1,1 @@
+import{b as s,j as e}from"./index-Ck0Fge8J.js";import{B as n}from"./blog-posts-BnUSS_0P.js";const i={"signs-of-the-times":"Signs of the Times",teaching:"Teaching",testimonies:"Testimonies",community:"Community"};function r(){const{category:t,posts:o}=s.useLoaderData();return e.jsx(n,{title:i[t]??t,posts:o})}export{r as component};
