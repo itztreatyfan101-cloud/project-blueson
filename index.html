@@ -1,0 +1,241 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Daily Scoop</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background: #ff6b6b;
+      color: white;
+      padding: 22px 8%;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 15px;
+    }
+
+    nav {
+      margin-top: 16px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      width: 85%;
+      max-width: 1100px;
+      margin: 30px auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 24px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .main-story img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .tag {
+      color: #ff6b6b;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    h2 {
+      margin: 10px 0;
+      font-size: 27px;
+    }
+
+    h3 {
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 15px;
+      color: #ff6b6b;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .news-item {
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .news-item:last-child {
+      border-bottom: none;
+    }
+
+    .news-item h4 {
+      margin: 6px 0;
+    }
+
+    .newsletter {
+      margin-top: 24px;
+    }
+
+    input {
+      width: 100%;
+      padding: 11px;
+      margin: 12px 0;
+      border: 1px solid #ddd;
+      border-radius: 7px;
+    }
+
+    button {
+      background: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 11px 16px;
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    button:hover {
+      background: #e85555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 22px;
+      margin-top: 30px;
+      background: #333;
+      color: white;
+    }
+
+    @media (max-width: 750px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>The Daily Scoop 🥄</h1>
+    <p>Little updates, big stories, and everything in between.</p>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Stuff Happening</a>
+      <a href="#">Tech Bits</a>
+      <a href="#">Sports</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <article class="card main-story">
+        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80" alt="News" />
+
+        <span class="tag">BIG NEWS</span>
+        <h2>The city wants more parks, bikes, and less traffic</h2>
+
+        <p>
+          There are plans for more green spaces, safer cycling routes, and a few
+          changes to make getting around feel less stressful.
+        </p>
+
+        <a class="read-more" href="#">Tell me more →</a>
+      </article>
+
+      <section class="card newsletter">
+        <h3>Want the scoop?</h3>
+        <p>Get a quick roundup of interesting stories sent your way.</p>
+
+        <input type="email" placeholder="Your email goes here" />
+        <button onclick="subscribe()">Yep, sign me up!</button>
+      </section>
+    </section>
+
+    <aside class="card">
+      <h3>Fresh stuff</h3>
+
+      <div class="news-item">
+        <span class="tag">TECH</span>
+        <h4>Phones are getting even smarter again</h4>
+        <p>New features are all about AI, cameras, and longer battery life.</p>
+      </div>
+
+      <div class="news-item">
+        <span class="tag">SPORTS</span>
+        <h4>Last-minute goal sends fans wild</h4>
+        <p>A dramatic finish made this match one to remember.</p>
+      </div>
+
+      <div class="news-item">
+        <span class="tag">AROUND THE WORLD</span>
+        <h4>Big climate meeting kicks off</h4>
+        <p>Leaders are getting together to talk about the planet.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Made for people who like knowing what’s going on.</p>
+  </footer>
+
+  <script>
+    function subscribe() {
+      const email = document.querySelector("input").value;
+
+      if (email === "") {
+        alert("Pop your email in first!");
+      } else {
+        alert("You’re in! Thanks for joining.");
+      }
+    }
+  </script>
+
+</body>
+</html>
+```
