@@ -1,1 +1,0 @@
-import{j as t,a as o}from"./index-Ck0Fge8J.js";import{B as s}from"./blog-posts-BnUSS_0P.js";function n(){return t.jsx(s,{title:"Latest Coverage",intro:"Reporting the news, teaching, and testimonies of our fellowship as we watch for the soon return of the Messiah.",posts:o})}export{n as component};
